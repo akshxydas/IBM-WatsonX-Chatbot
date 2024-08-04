@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ADD8E6; /* Light Blue */
+    color: #000; /* Text color */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #87CEFA; /* Light Sky Blue */
+    color: #000;
+}
+
+header nav ul li a.active {
+    background-color: #90EE90; /* Light Green */
+    color: #000;
+}
+
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Initial border radius */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green */
+    border-radius: 50px; /* Change shape on hover */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Add shadow effect */
+    transform: scale(1.1); /* Slightly enlarge the button */
+}
+
+/* Custom styles for navigation links */
+nav ul li a {
+    color: #FAFAD2;/* Default link color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Add some padding */
+    transition: color 0.3s, background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+nav ul li a:hover {
+    color: #fff; /* Text color on hover */
+    background-color: #007BFF; /* Background color on hover */
+}
+
+nav ul li a.active {
+    color: #fff; /* Active link text color */
+    background-color: #0056b3; /* Active link background color */
+}
+
+.responsive-video {
+    width: 40%; /* Adjust the width as needed */
+    height: auto; /* This will maintain the aspect ratio */
+    max-width: 800px; /* Optional: set a maximum width */
+    display: block;
+    margin: 0 auto; /* Center the video */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+footer {
+    background-color: #f2f2f2; /* Light gray background */
+    text-align: center; /* Center-align text */
+    padding: 20px 0; /* Padding for top and bottom */
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center-align items horizontally */
+}
+
+footer .social-media {
+    margin-top: 10px; /* Adjust margin as needed */
+}
+
+footer .social-media a {
+    display: block; /* Display icons as block elements */
+    margin-bottom: 10px; /* Adjust spacing between icons */
+}
+
+footer .social-media img {
+    width: 30px; /* Adjust icon size */
+    height: 30px; /* Adjust icon size */
+    border-radius: 50%; /* Rounded icons */
+}
+
+
+
+
+/* Additional styling as per your design concept */

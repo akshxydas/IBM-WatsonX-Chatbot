@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsible Consumption and Production</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Responsible Consumption and Production</h1>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+		    <li><a href="sustainability-tips.html">Sustainability Tips</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h2>Welcome to Responsible Consumption and Production</h2>
+                <p>Learn how to make sustainable choices for a better future.</p>
+                <button id="learn-more-btn">Learn More</button>
+		
+            </div>
+        </section>
+
+        <section id="about" class="container">
+    		<h2>About Us</h2>
+    		<p>Welcome to Responsible Consumption and Production, where we are dedicated to promoting sustainable practices for a better world. Our mission is to educate individuals and communities about the importance of responsible consumption and production to safeguard our planet's future.</p>
+    
+    		<p>At Responsible Consumption and Production, we believe in making eco-friendly choices accessible and understandable for everyone. Through our comprehensive guides, workshops, and product recommendations, we empower individuals to adopt sustainable lifestyles and reduce their environmental footprint.</p>
+    
+    		<p>Founded with a vision of creating a greener and more sustainable future, our team of passionate environmentalists and experts works tirelessly to provide valuable resources and actionable tips. Together, we strive to inspire positive change and foster a global community committed to preserving our planet.</p>
+    
+    		<p>Join us in our journey towards sustainability. Together, we can make a difference—one eco-friendly choice at a time.</p>
+	</section>
+
+
+        <section id="services" class="container">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Eco-friendly product recommendations</li>
+                <li>Recycling tips and resources</li>
+                <li>Sustainable lifestyle guides</li>
+                <li>Workshops and seminars</li>
+            </ul>
+	    <h3>Chatbot Assistance</h3>
+    <p>Explore our services with the help of our chatbot! Look for the chat icon at the bottom right corner of the page to start a conversation. Our chatbot can provide personalized recommendations, answer your questions about sustainable living, and guide you towards making eco-friendly choices.</p>
+        </section>
+
+        <section id="gallery" class="container">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <img src="images/eco-friendly.jpg" alt="Eco-Friendly Products">
+                <img src="images/recycling.jpg" alt="Recycling Tips">
+                <img src="images/sustainable-lifestyle.jpg" alt="Sustainable Lifestyle">
+            </div>
+        </section>
+
+        <section id="video" class="container">
+    		<h2>Watch Our Video</h2>
+    		<video controls class="responsive-video">
+        		<source src="media/sustainable-choices.mp4" type="video/mp4">
+        		Your browser does not support the video tag.
+    		</video>
+		<video controls class="responsive-video">
+        		<source src="media/energy.mp4" type="video/mp4">
+        		Your browser does not support the video tag.
+    		</video>
+	</section>
+
+
+        <section id="contact" class="container">
+            <h2>Contact Us</h2>
+            <form action="/submit-form" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+    <div class="container">
+        <p>&copy; 2024 Responsible Consumption and Production. All rights reserved.</p>
+        <p>Need help? Our chatbot is here to assist you. Look for the chat icon at the bottom right corner of the page!</p>
+        <div class="social-media">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram.jpeg" alt="Instagram"></a>
+        </div>
+    </div>
+    </footer>
+
+
+
+    <!-- Watson Assistant integration script -->
+    <script>
+  	window.watsonAssistantChatOptions = {
+    		integrationID: "33632531-410f-4f93-b04d-791539f54f21", // The ID of this integration.
+    		region: "us-south", // The region your integration is hosted in.
+    		serviceInstanceID: "f339883c-88fe-48a7-8e89-d8f2f5180b42", // The ID of your service instance.
+    		onLoad: async (instance) => { await instance.render(); }
+  	};
+  	setTimeout(function(){
+    		const t=document.createElement('script');
+    		t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    		document.head.appendChild(t);
+  	});
+	
+    </script>
+	
+
+    <script src="script.js"></script>
+</body>
+</html>
